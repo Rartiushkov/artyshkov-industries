@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ARTYSHKOV Industries</title>
+  <meta name="description" content="Low-level systems. Real environments. Verified results. Hardware firmware, protein scoring, AWS migration, EW & cryptography." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="noise"></div>
+  <div class="grid-overlay"></div>
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="#top">
+        <span class="brand-mark">A</span>
+        <span class="brand-name">ARTYSHKOV<em>Industries</em></span>
+      </a>
+      <nav class="topnav">
+        <a href="#work">Work</a>
+        <a href="#lab">Lab</a>
+        <a href="#research">Research</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="hero-kicker">Roman Artyushkov · Gomel, Belarus</div>
+        <h1 class="hero-title">
+          Systems that work<br/>
+          <span>at the boundary.</span>
+        </h1>
+        <p class="hero-sub">Hardware. Biology. Security. Cloud.<br/>Low-level engineering across domains that don't usually talk to each other.</p>
+        <div class="hero-actions">
+          <a href="#work" class="btn-primary">See the work</a>
+          <a href="#contact" class="btn-ghost">Get in touch</a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <strong>6</strong>
+            <span>Active domains</span>
+          </div>
+          <div class="hero-stat">
+            <strong>1</strong>
+            <span>Patent filed (TR)</span>
+          </div>
+          <div class="hero-stat">
+            <strong>Rust</strong>
+            <span>Primary language</span>
+          </div>
+          <div class="hero-stat">
+            <strong>Live</strong>
+            <span>AWS demo org</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="terminal">
+          <div class="terminal-bar">
+            <span></span><span></span><span></span>
+            <span class="terminal-title">cargo test --workspace</span>
+          </div>
+          <div class="terminal-body" id="terminal-output">
+            <div class="t-line"><span class="t-green">running</span> 12 tests</div>
+            <div class="t-line"><span class="t-dim">test firmware::boot_sequence</span> <span class="t-green">ok</span></div>
+            <div class="t-line"><span class="t-dim">test crypto::key_derivation</span> <span class="t-green">ok</span></div>
+            <div class="t-line"><span class="t-dim">test scoring::protein_fold</span> <span class="t-green">ok</span></div>
+            <div class="t-line"><span class="t-dim">test aws::migration_pass</span> <span class="t-green">ok</span></div>
+            <div class="t-line"><span class="t-dim">test ew::signal_suppress</span> <span class="t-green">ok</span></div>
+            <div class="t-line"><span class="t-dim">test lab::virtual_probe</span> <span class="t-green">ok</span></div>
+            <div class="t-line t-summary"><span class="t-green">test result: ok.</span> <span class="t-dim">12 passed; 0 failed; 0 ignored</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORK -->
+    <section class="section" id="work">
+      <div class="section-inner">
+        <div class="section-label">Work</div>
+        <h2>Six domains.<br/>One engineering philosophy.</h2>
+        <div class="domains-grid">
+
+          <a class="domain-card domain-featured" href="https://availabl.pages.dev" target="_blank" rel="noopener">
+            <div class="domain-num">01</div>
+            <div class="domain-icon">☁</div>
+            <h3>AWS Migration</h3>
+            <p>Live sandbox demo org. Source inventory to target validation in one controlled run. Real AWS resources, no fake product copy.</p>
+            <div class="domain-tag">Live ↗</div>
+          </a>
+
+          <div class="domain-card">
+            <div class="domain-num">02</div>
+            <div class="domain-icon">⚡</div>
+            <h3>Firmware &amp; Hardware</h3>
+            <p>Low-level firmware development. Device bring-up, bare-metal systems, embedded protocols. From silicon to running code.</p>
+            <div class="domain-tag">Engineering</div>
+          </div>
+
+          <div class="domain-card">
+            <div class="domain-num">03</div>
+            <div class="domain-icon">🧬</div>
+            <h3>Protein Scoring</h3>
+            <p>Computational scoring of protein structures. ML-assisted folding analysis, sequence-to-structure pipelines.</p>
+            <div class="domain-tag">Biotech</div>
+          </div>
+
+          <div class="domain-card domain-patent">
+            <div class="domain-num">04</div>
+            <div class="domain-icon">🔐</div>
+            <h3>EW &amp; Cryptography</h3>
+            <p>Electronic warfare signal processing and cryptographic system design. Patent application filed in Turkey.</p>
+            <div class="domain-tag">Patent · TR</div>
+          </div>
+
+          <div class="domain-card">
+            <div class="domain-num">05</div>
+            <div class="domain-icon">📦</div>
+            <h3>Code Escrow</h3>
+            <p>Formal code depository and IP protection. Source code deposited and timestamped for legal and commercial use.</p>
+            <div class="domain-tag">IP Protection</div>
+          </div>
+
+          <div class="domain-card domain-lab">
+            <div class="domain-num">06</div>
+            <div class="domain-icon">🧪</div>
+            <h3>Virtual Lab</h3>
+            <p>Rust/Cargo-based virtual testing environment. Physical-grade test suites without physical hardware — deterministic, reproducible.</p>
+            <div class="domain-tag">Rust · Cargo</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- LAB -->
+    <section class="section section-dark" id="lab">
+      <div class="section-inner">
+        <div class="section-label">Virtual Lab</div>
+        <h2>Physical-grade tests.<br/>No physical hardware.</h2>
+        <div class="lab-layout">
+          <div class="lab-copy">
+            <p>The virtual lab runs deterministic Rust test suites that simulate hardware behaviour — boot sequences, signal interference, memory constraints — without requiring a physical testbench.</p>
+            <p>Every module is tested against a simulated environment that mirrors real-world constraints. Results are reproducible, versioned, and exportable as evidence.</p>
+            <div class="lab-chips">
+              <span>Rust</span>
+              <span>Cargo</span>
+              <span>no_std</span>
+              <span>QEMU</span>
+              <span>SVD2Rust</span>
+            </div>
+          </div>
+          <div class="lab-terminal">
+            <div class="terminal">
+              <div class="terminal-bar">
+                <span></span><span></span><span></span>
+                <span class="terminal-title">virtual_lab::probe</span>
+              </div>
+              <div class="terminal-body">
+                <div class="t-line"><span class="t-cyan">→</span> Initializing virtual probe...</div>
+                <div class="t-line"><span class="t-dim">  GPIO_A: HIGH [3.3V sim]</span></div>
+                <div class="t-line"><span class="t-dim">  SPI_CLK: 8MHz virtual</span></div>
+                <div class="t-line"><span class="t-dim">  UART_RX: listening</span></div>
+                <div class="t-line"><span class="t-cyan">→</span> Running boot sequence...</div>
+                <div class="t-line"><span class="t-green">✓</span> Stage 1 complete (12ms)</div>
+                <div class="t-line"><span class="t-green">✓</span> Stage 2 complete (34ms)</div>
+                <div class="t-line"><span class="t-green">✓</span> Peripheral init OK</div>
+                <div class="t-line"><span class="t-green">✓</span> All assertions passed</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESEARCH -->
+    <section class="section" id="research">
+      <div class="section-inner">
+        <div class="section-label">Research</div>
+        <h2>From first principles<br/>to filed patents.</h2>
+        <div class="research-grid">
+          <div class="research-card research-card-main">
+            <div class="research-kicker">EW · Cryptography</div>
+            <h3>Signal suppression &amp; key derivation in contested environments</h3>
+            <p>Research into cryptographic key derivation methods resistant to electronic warfare interference. Patent application filed with Turkish Patent and Trademark Office.</p>
+            <div class="research-meta">
+              <span>Patent application</span>
+              <span>Turkey (TR)</span>
+              <span>2025–2026</span>
+            </div>
+          </div>
+          <div class="research-card">
+            <div class="research-kicker">Biotech</div>
+            <h3>Protein scoring pipeline</h3>
+            <p>ML-assisted scoring of protein folding candidates. Sequence-to-structure with confidence metrics.</p>
+          </div>
+          <div class="research-card">
+            <div class="research-kicker">IP</div>
+            <h3>Code depository</h3>
+            <p>Formal IP protection through timestamped code deposit. Covers firmware, crypto, and scoring modules.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section section-contact" id="contact">
+      <div class="section-inner">
+        <div class="contact-block">
+          <div class="section-label">Contact</div>
+          <h2>Let's build something<br/>that actually works.</h2>
+          <p>Available for deep-tech collaborations, consulting, and research partnerships.</p>
+          <a href="mailto:rartiushkov@gmail.com" class="btn-primary btn-lg">rartiushkov@gmail.com</a>
+          <div class="contact-links">
+            <a href="https://github.com/Rartiushkov" target="_blank" rel="noopener">GitHub ↗</a>
+            <a href="https://availabl.pages.dev" target="_blank" rel="noopener">Availabl demo ↗</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <span>© 2026 ARTYSHKOV Industries</span>
+      <span>Gomel, Belarus</span>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
