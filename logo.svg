@@ -1,11 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
-  <!-- Circuit-style A mark -->
-  <rect width="48" height="48" rx="10" fill="#c9f135"/>
-  <!-- A shape as circuit trace -->
-  <path d="M24 8 L36 36 H30 L27.5 29 H20.5 L18 36 H12 L24 8Z" fill="none" stroke="#080808" stroke-width="2.5" stroke-linejoin="round"/>
-  <path d="M22 25 H26" stroke="#080808" stroke-width="2.5" stroke-linecap="round"/>
-  <!-- Circuit dots -->
-  <circle cx="24" cy="8" r="1.5" fill="#080808"/>
-  <circle cx="36" cy="36" r="1.5" fill="#080808"/>
-  <circle cx="12" cy="36" r="1.5" fill="#080808"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" fill="none">
+  <rect width="40" height="40" rx="6" fill="#111111"/>
+  <path d="M20 10 L29 30 H25.5 L23.4 25 H16.6 L14.5 30 H11 L20 10Z" fill="#e8e8e6"/>
+  <rect x="17.2" y="22" width="5.6" height="1.8" fill="#111111"/>
 </svg>
