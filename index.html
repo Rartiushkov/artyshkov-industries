@@ -30,12 +30,22 @@
       </a>
       <nav class="topnav">
         <a href="#work">Work</a>
-        <a href="#lab">Lab</a>
         <a href="#research">Research</a>
+        <a href="#lab">Lab</a>
         <a href="#contact">Contact</a>
       </nav>
+      <button class="nav-toggle" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
     </div>
   </header>
+
+  <nav class="nav-overlay" id="nav-overlay">
+    <a href="#work" class="nav-ol-link">Work</a>
+    <a href="#research" class="nav-ol-link">Research</a>
+    <a href="#lab" class="nav-ol-link">Lab</a>
+    <a href="#contact" class="nav-ol-link">Contact</a>
+  </nav>
 
   <main id="top">
 
@@ -43,8 +53,8 @@
     <section class="hero">
       <div class="hero-content">
         <p class="hero-location">Gomel, Belarus · Est. 2024</p>
-        <h1 class="hero-title">ARTYSHKOV<br/><span>Industries</span></h1>
-        <p class="hero-sub">Hardware. Biology. Security. Cloud.<br/>Engineering at the boundary of physical and digital systems.</p>
+        <h1 class="hero-title">Systems<br/><span>at the edge.</span></h1>
+        <p class="hero-sub">Deep-tech engineering across hardware, biology, security and cloud — built from first principles and tested in real environments.</p>
         <div class="hero-actions">
           <a href="#work" class="btn-primary">View work</a>
           <a href="#contact" class="btn-ghost">Contact</a>
@@ -68,7 +78,7 @@
       <div class="section-inner">
         <div class="section-header">
           <div class="section-label">Work</div>
-          <h2>Six domains.<br/>One engineer.</h2>
+          <h2>The work.</h2>
         </div>
 
         <div class="work-list">
@@ -157,7 +167,38 @@
       </div>
     </section>
 
-    <!-- LAB — wide terminal, no copy/terminal split -->
+    <!-- RESEARCH -->
+    <section class="section" id="research">
+      <div class="section-inner">
+        <div class="section-header">
+          <div class="section-label">Research</div>
+          <h2>First principles.<br/>Filed patents.</h2>
+        </div>
+        <div class="research-grid">
+          <div class="research-card research-main">
+            <div class="research-tag">Patent application · Turkey</div>
+            <h3>EW-resistant cryptographic key derivation</h3>
+            <p>Methods for deriving cryptographic keys in environments subject to active electronic warfare interference. Filed with the Turkish Patent and Trademark Office, 2025–2026.</p>
+            <div class="research-footer">
+              <span>TR Patent Office</span>
+              <span>2025 – 2026</span>
+            </div>
+          </div>
+          <div class="research-card">
+            <div class="research-tag">Biotech</div>
+            <h3>Protein folding scoring pipeline</h3>
+            <p>ML-assisted pipeline for scoring protein folding candidates. Sequence-to-structure with per-residue confidence metrics.</p>
+          </div>
+          <div class="research-card">
+            <div class="research-tag">IP Protection</div>
+            <h3>Code depository</h3>
+            <p>Timestamped source deposits for firmware, cryptographic, and scoring modules. Legal IP coverage across all active projects.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LAB -->
     <section class="section section-dark" id="lab">
       <div class="section-inner">
         <div class="section-header">
@@ -204,37 +245,6 @@
       </div>
     </section>
 
-    <!-- RESEARCH -->
-    <section class="section" id="research">
-      <div class="section-inner">
-        <div class="section-header">
-          <div class="section-label">Research</div>
-          <h2>First principles.<br/>Filed patents.</h2>
-        </div>
-        <div class="research-grid">
-          <div class="research-card research-main">
-            <div class="research-tag">Patent application · Turkey</div>
-            <h3>EW-resistant cryptographic key derivation</h3>
-            <p>Methods for deriving cryptographic keys in environments subject to active electronic warfare interference. Filed with the Turkish Patent and Trademark Office, 2025–2026.</p>
-            <div class="research-footer">
-              <span>TR Patent Office</span>
-              <span>2025 – 2026</span>
-            </div>
-          </div>
-          <div class="research-card">
-            <div class="research-tag">Biotech</div>
-            <h3>Protein folding scoring pipeline</h3>
-            <p>ML-assisted pipeline for scoring protein folding candidates. Sequence-to-structure with per-residue confidence metrics.</p>
-          </div>
-          <div class="research-card">
-            <div class="research-tag">IP Protection</div>
-            <h3>Code depository</h3>
-            <p>Timestamped source deposits for firmware, cryptographic, and scoring modules. Legal IP coverage across all active projects.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- CONTACT -->
     <section class="section" id="contact">
       <div class="section-inner">
@@ -247,8 +257,9 @@
           <div class="contact-right">
             <a href="mailto:rartiushkov@gmail.com" class="contact-email">rartiushkov@gmail.com ↗</a>
             <div class="contact-links">
-              <a href="https://github.com/Rartiushkov" target="_blank" rel="noopener">GitHub</a>
-              <a href="https://availabl.pages.dev" target="_blank" rel="noopener">Availabl</a>
+              <a href="https://github.com/Rartiushkov" target="_blank" rel="noopener">GitHub ↗</a>
+              <a href="https://www.linkedin.com/in/rartiushkov" target="_blank" rel="noopener">LinkedIn ↗</a>
+              <a href="https://availabl.pages.dev" target="_blank" rel="noopener">Availabl ↗</a>
             </div>
           </div>
         </div>
@@ -259,8 +270,8 @@
 
   <footer class="footer">
     <div class="footer-inner">
-      <span>© 2026 ARTYSHKOV Industries · Gomel, Belarus</span>
-      <span>Built with Rust &amp; Cloudflare</span>
+      <span>© 2026 ARTYSHKOV Industries</span>
+      <span>Gomel, Belarus</span>
     </div>
   </footer>
 

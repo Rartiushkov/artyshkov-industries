@@ -153,6 +153,68 @@ a { color: inherit; text-decoration: none; }
 .topnav a { transition: color 200ms ease; }
 .topnav a:hover { color: var(--text); }
 
+/* MOBILE NAV TOGGLE */
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 32px;
+  height: 32px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  z-index: 60;
+}
+
+.nav-toggle span {
+  display: block;
+  height: 1px;
+  background: rgba(255,255,255,0.6);
+  transition: transform 240ms ease, opacity 240ms ease, width 240ms ease;
+  transform-origin: center;
+}
+
+.nav-toggle span:first-child { width: 20px; }
+.nav-toggle span:last-child  { width: 14px; }
+
+.nav-toggle[aria-expanded="true"] span:first-child {
+  transform: translateY(3px) rotate(45deg);
+  width: 18px;
+}
+.nav-toggle[aria-expanded="true"] span:last-child {
+  transform: translateY(-3px) rotate(-45deg);
+  width: 18px;
+}
+
+/* MOBILE NAV OVERLAY */
+.nav-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 49;
+  background: rgba(5,5,5,0.97);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.nav-overlay.open { display: flex; }
+
+.nav-overlay a {
+  font-family: var(--font-display);
+  font-size: 2.4rem;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  color: rgba(255,255,255,0.4);
+  transition: color 180ms ease;
+}
+.nav-overlay a:hover { color: var(--text); }
+
 /* BUTTONS */
 .btn-primary {
   display: inline-flex;
@@ -623,6 +685,7 @@ a { color: inherit; text-decoration: none; }
   .section { padding: 72px 0; }
   .topbar-inner { padding: 0 20px; }
   .topnav { display: none; }
+  .nav-toggle { display: flex; }
   .work-item { flex-direction: column; gap: 12px; }
   .work-item::before { display: none; }
   .work-right { align-items: flex-start; }
@@ -630,4 +693,5 @@ a { color: inherit; text-decoration: none; }
   .research-main { grid-column: auto; }
   .hero-domains { display: none; }
   .contact-wrap { grid-template-columns: 1fr; gap: 40px; padding: 48px 0; }
+  .t-line { white-space: normal; font-size: 0.72rem; }
 }
