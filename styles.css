@@ -330,7 +330,7 @@ a { color: inherit; text-decoration: none; }
 /* SECTION BASE */
 .section {
   position: relative;
-  padding: 112px 0;
+  padding: 72px 0;
   background: rgba(5,5,5,0.70);
 }
 
