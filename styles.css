@@ -261,7 +261,7 @@ a { color: inherit; text-decoration: none; }
 
 .hero-inner {
   position: absolute;
-  bottom: 6vh;
+  top: 22%;
   left: 0;
   right: 0;
   max-width: var(--max-w);
