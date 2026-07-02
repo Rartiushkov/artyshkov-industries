@@ -432,7 +432,7 @@ a { color: inherit; text-decoration: none; }
 .work-left p {
   font-size: 0.85rem;
   font-weight: 300;
-  color: rgba(255,255,255,0.35);
+  color: rgba(255,255,255,0.58);
   line-height: 1.7;
   max-width: 52ch;
 }
@@ -449,7 +449,7 @@ a { color: inherit; text-decoration: none; }
 .work-tech {
   font-family: "JetBrains Mono", monospace;
   font-size: 0.72rem;
-  color: var(--dim);
+  color: rgba(255,255,255,0.32);
   letter-spacing: 0.04em;
 }
 
@@ -471,6 +471,12 @@ a { color: inherit; text-decoration: none; }
   background: rgba(129, 140, 248, 0.08);
   color: var(--accent-patent);
   border: 1px solid rgba(129, 140, 248, 0.15);
+}
+
+.work-status-deposit {
+  background: rgba(212, 168, 83, 0.08);
+  color: var(--accent-warm);
+  border: 1px solid rgba(212, 168, 83, 0.18);
 }
 
 /* LAB */
