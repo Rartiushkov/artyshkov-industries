@@ -39,11 +39,11 @@ body {
 
 a { color: inherit; text-decoration: none; }
 
-/* VIDEO */
+/* VIDEO — fixed fullscreen background, only visible through hero */
 .site-video {
   position: fixed;
   inset: 0;
-  z-index: -2;
+  z-index: 0;
   background: #050505;
   overflow: hidden;
 }
@@ -53,7 +53,7 @@ a { color: inherit; text-decoration: none; }
   height: 100%;
   object-fit: cover;
   object-position: center 30%;
-  filter: brightness(0.45) saturate(0.8);
+  filter: brightness(0.5) saturate(0.85);
 }
 
 .site-video__shade {
@@ -61,16 +61,16 @@ a { color: inherit; text-decoration: none; }
   inset: 0;
   background:
     linear-gradient(180deg,
-      rgba(0,0,0,0.55) 0%,
-      rgba(0,0,0,0.2) 35%,
-      rgba(0,0,0,0.45) 70%,
-      rgba(0,0,0,0.82) 100%);
+      rgba(0,0,0,0.4) 0%,
+      rgba(0,0,0,0.15) 30%,
+      rgba(0,0,0,0.35) 65%,
+      rgba(0,0,0,0.75) 100%);
 }
 
 .site-video__fade {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, transparent 55%, var(--bg) 100%);
+  background: linear-gradient(180deg, transparent 60%, rgba(5,5,5,0.95) 100%);
 }
 
 /* ENGINEERING GRID — sparse, precise, Rams */
@@ -78,7 +78,7 @@ a { color: inherit; text-decoration: none; }
   position: fixed;
   inset: 0;
   pointer-events: none;
-  z-index: 0;
+  z-index: 1;
   background-image:
     linear-gradient(rgba(255,255,255,0.028) 1px, transparent 1px),
     linear-gradient(90deg, rgba(255,255,255,0.028) 1px, transparent 1px),
@@ -93,7 +93,7 @@ a { color: inherit; text-decoration: none; }
 .topbar {
   position: fixed;
   inset: 0 0 auto;
-  z-index: 50;
+  z-index: 10;
   background: transparent;
   transition: background 300ms ease, border-color 300ms ease;
 }
@@ -252,15 +252,16 @@ a { color: inherit; text-decoration: none; }
 /* HERO — fullscreen cinematic */
 .hero {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   height: 100vh;
   height: 100dvh;
   width: 100%;
+  background: transparent;
 }
 
 .hero-inner {
   position: absolute;
-  top: 52%;
+  bottom: 0;
   left: 0;
   right: 0;
   max-width: var(--max-w);
@@ -330,7 +331,7 @@ a { color: inherit; text-decoration: none; }
 /* SECTION BASE */
 .section {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   padding: 112px 0;
   background: var(--bg);
 }
