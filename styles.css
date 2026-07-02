@@ -333,6 +333,7 @@ a { color: inherit; text-decoration: none; }
   position: relative;
   z-index: 1;
   padding: 112px 0;
+  background: var(--bg);
 }
 
 .section-dark {
